@@ -26,8 +26,8 @@ public:
 
         joint[1] = JointStatus_t{ // Head
             2,
-            70,
-            95,
+            0,
+            15,
             0,
             -15,
             15,
@@ -43,8 +43,8 @@ public:
 
         joint[2] = JointStatus_t{ // Left arm roll
             4,
-            -9,
-            3,
+            15,
+            50,
             0,
             0,
             30,
@@ -60,8 +60,8 @@ public:
 
         joint[3] = JointStatus_t{ // Left arm pitch
             6,
-            -16,
-            117,
+            0,
+            150,
             0,
             -20,
             180,
@@ -77,8 +77,8 @@ public:
 
         joint[4] = JointStatus_t{ // Right arm roll
             8,
-            133,
-            141,
+            105,
+            140,
             0,
             0,
             30,
@@ -94,7 +94,7 @@ public:
 
         joint[5] = JointStatus_t{ // Right arm pitch
             10,
-            15,
+            0,
             150,
             0,
             -20,
@@ -111,7 +111,7 @@ public:
 
         joint[6] = JointStatus_t{ // Body
             12,
-            0,
+            80,
             180,
             0,
             -90,

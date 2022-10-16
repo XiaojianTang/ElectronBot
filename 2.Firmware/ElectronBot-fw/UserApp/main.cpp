@@ -36,12 +36,12 @@ void Main(void)
         for (int p = 0; p < 4; p++)
         {
             // send joint angles
-            for (int j = 0; j < 6; j++)
-                for (int i = 0; i < 4; i++)
-                {
-                    auto* b = (unsigned char*) &(electron.joint[j + 1].angle);
+            for (int j = 0; j < 6; j++) {
+                for (int i = 0; i < 4; i++) {
+                    auto *b = (unsigned char *) &(electron.joint[j + 1].angle);
                     electron.usbBuffer.extraDataTx[j * 4 + i + 1] = *(b + i);
                 }
+            }
             electron.SendUsbPacket(electron.usbBuffer.extraDataTx, 32);
 
             electron.ReceiveUsbPacketUntilSizeIs(224); // last packet is 224bytes
